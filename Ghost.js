@@ -24,7 +24,6 @@ function start()
     head.setColor(BODY_COLOR);
     add(head);
     
-    
     //draws body of the ghost
     var body = new Rectangle(BODY_WIDTH, BODY_HEIGHT);
     body.setPosition(getWidth()/2 - 
@@ -43,4 +42,33 @@ function start()
         
         legPX = legPX + FOOT_RADIUS*2;
     }
+    
+    //left eye
+    var leftEye = new Circle(EYE_RADIUS);
+    leftEye.setPosition(getWidth()/2 - EYE_OFFSET, 
+    getHeight()/2 - HEAD_RADIUS);
+    leftEye.setColor(EYE_COLOR);
+    add(leftEye);
+    
+    var leftPupil = new Circle(PUPIL_RADIUS);
+    leftPupil.setPosition(getWidth()/2 - PUPIL_LEFT_OFFSET, 
+    getHeight()/2 - HEAD_RADIUS);
+    leftPupil.setColor(PUPIL_COLOR);
+    add(leftPupil);
+    
+    
+    //draws right eye
+    var rightEye = new Circle(EYE_RADIUS);
+    rightEye.setPosition(getWidth()/2 + EYE_OFFSET, 
+    getHeight()/2 - HEAD_RADIUS);
+    rightEye.setColor(EYE_COLOR);
+    add(rightEye);
+    
+    var rightPupil = new Circle(PUPIL_RADIUS);
+    rightPupil.setPosition(getWidth()/2 + PUPIL_RIGHT_OFFSET, 
+    getHeight()/2 - HEAD_RADIUS);
+    rightPupil.setColor(PUPIL_COLOR);
+    add(rightPupil);
+    
+    
 }
