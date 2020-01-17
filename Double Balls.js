@@ -16,14 +16,15 @@ function countBalls()
     {
         takeBall();
         ballCount++;
-        doubleBall = ballCount*2;
     }
+    doubleBall = ballCount*2;
 }
 
 //places double the balls than originally present
 function doubleBalls()
 {
-    while(ballCount <= doubleBall)
+    var ballNum = ballCount
+    for(var i = 0; i<doubleBall; i++)
     {
         putBall();
     }
@@ -32,7 +33,7 @@ function doubleBalls()
 //places Karel back at (0,0) facing east
 function reset()
 {
-    turnLeft;
+    turnAround();
     move();
-    turnLeft();
+    turnAround();
 }
