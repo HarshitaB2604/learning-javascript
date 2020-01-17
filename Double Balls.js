@@ -17,6 +17,7 @@ function countBalls()
         takeBall();
         ballCount++;
     }
+    //calculates the double number of balls
     doubleBall = ballCount*2;
 }
 
