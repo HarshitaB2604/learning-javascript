@@ -1,6 +1,5 @@
 function start()
 {
-    var count = 0;
     var radius = 200;
     var color = true;
     
@@ -13,12 +12,12 @@ function start()
         //changes the color between black and red
         if(color)
         {
-            circle.setColor("red");
+            circle.setColor(Color.red);
             color = !color;
         }
         else
         {
-            circle.setColor("black");
+            circle.setColor(Color.black);
             color = !color;
         }
         
