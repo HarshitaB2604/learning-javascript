@@ -44,7 +44,7 @@ function warningLight(bWidth, bHeight, buildingX)
     
     //circular light part of it
     var LIGHT_X_POSITION = buildingX + LIGHT_RADIUS/4;
-    var LIGHT_Y_POSITION = getHeight() - bHeight - 1/6*bHeight - LIGHT_RADIUS/2;
+    var LIGHT_Y_POSITION = getHeight() - bHeight - 1/6*bHeight - LIGHT_RADIUS;
     
     var warningLight = new Circle(LIGHT_RADIUS);
     warningLight.setColor(Color.green);
